@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love You Babe</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap" rel="stylesheet">
+
+<style>
+    .container {
+        font-family: 'Kanit', sans-serif;
+    }
+    
+    input {
+        font-family: 'Kanit', sans-serif;
+        height: 25px;
+        border-radius: 10px;
+        border: none black;
+        text-align: center;
+    }
+    button{
+
+        font-family: 'Kanit', sans-serif;
+    }
+
+</style>
+    
+
+</head>
+<body>
+    <div class="container">
+        <h1>ก่อนไปขอถามก่อน เราคบกันวันแรกวันที่เท่าไหร่</h1>
+        <input type="text" id="answer" placeholder="ตอบไม่ได้โกรธ">
+    <div class="button">
+        <button class="btn-1" onclick="checkAnswer()">ยืนยัน</button>
+    </div>
+</div>
+
+<script>
+    function checkAnswer() {
+        var userAnswer = document.getElementById("answer").value;
+        var isCorrect = (userAnswer === "011223");
+
+        if (isCorrect) {
+            alert("ถูกกกกกกกกก น่ารักอะให้ผ่านก็ได้");
+           
+            window.location.href = "hbd3.html";
+        } else {
+            alert("เห้อตอบไม่ถูกเสียใจวะ");
+        }
+    }
+</script>
+
+</body>
+</html>
